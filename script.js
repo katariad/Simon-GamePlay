@@ -27,6 +27,13 @@ $(document).keypress(function () {
   }
 });
 
+$(document).on("tap",function () {
+  if (!gameStarted) {
+    gameStarted = true;
+    nextSequence();
+  }
+});
+
 $(".btn").click(function () {
   let userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);

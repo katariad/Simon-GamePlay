@@ -27,7 +27,7 @@ $(document).keypress(function () {
   }
 });
 
-$(document).on("tap",function () {
+$(document).bind("tap",function () {
   if (!gameStarted) {
     gameStarted = true;
     nextSequence();
